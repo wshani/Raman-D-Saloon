@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="si">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Raman D Saloon</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script defer src="js/lang-switcher.js"></script>
+    <script defer src="js/nav.js"></script> <!-- nav logic -->
 </head>
 <body>
     <header>
-      <h1>Raman D Saloon</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="booking.html">Book now</a>
-      </nav>
-      <div class="language-switch">
-      <button onclick="setLanguage('en')">English</button>
-      <button onclick="setLanguage('si')">සිංහල</button>
-    </div>
-    </header>
+    <h1 class="lang en">Raman D Saloon</h1>
+    <h1 class="lang si">රමන් ඩී සැලූන්</h1>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('si')">සිංහල</button>
+  </header>
+
+  <!--  Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+      <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+      <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+      <li><a href="booking.html" class="nav-link" id="nav-booking">Booking</a></li>
+    </ul>
+  </nav>
   
     <main>
       <p>Experience beauty, style, and elegance in one place.</p>

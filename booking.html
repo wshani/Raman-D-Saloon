@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raman D Saloon - Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/lang-switcher.js"></script>
+  <script defer src="js/booking.js"></script>
+  <script defer src="js/nav.js"></script> <!-- nav logic -->
+</head>
+<body>
+  <header>
+    <h1 class="lang en">Raman D Saloon</h1>
+    <h1 class="lang si">රමන් ඩී සැලූන්</h1>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('si')">සිංහල</button>
+  </header>
+
+  <!--  Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+      <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+      <li><a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a></li>
+      <li><a href="booking.html" class="nav-link" id="nav-booking">Booking</a></li>
+    </ul>
+  </nav>
+
+  <!--  Booking Form Section -->
+  <main>
+    <section id="booking" class="booking-section">
+      <h2 class="lang en">Book an Appointment</h2>
+      <h2 class="lang si">වෙලාවක් වෙන්කරවා ගන්න</h2>
+
+      <form id="bookingForm">
+        <label for="date" class="lang en">Choose a Date:</label>
+        <label for="date" class="lang si">දිනයක් තෝරන්න:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time" class="lang en">Choose a Time:</label>
+        <label for="time" class="lang si">වේලාවක් තෝරන්න:</label>
+        <select id="time" name="time" required>
+          <!-- Times will be filled by booking.js -->
+        </select>
+
+        <label for="name" class="lang en">Your Name:</label>
+        <label for="name" class="lang si">ඔබගේ නම:</label>
+        <input type="text" id="name" name="name" required />
+
+        <button type="submit" class="lang en">Book Now</button>
+        <button type="submit" class="lang si">දැන් වෙන්කරන්න</button>
+      </form>
+
+      <p id="bookingMessage"></p>
+    </section>
+  </main>
+
+  <!--  Footer -->
+  <footer>
+    <p class="lang en">© 2025 Raman D Saloon. All rights reserved.</p>
+    <p class="lang si">© 2025 රමන් ඩී සැලූන්. සියලු හිමිකම් ඇවිරිණි.</p>
+  </footer>
+</body>
+</html>
